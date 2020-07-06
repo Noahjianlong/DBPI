@@ -1,0 +1,246 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/sketch_stroke"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/brush" />
+
+            <ImageView
+                android:id="@+id/sketch_eraser"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/eraser" />
+
+            <ImageView
+                android:id="@+id/sketch_undo"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:alpha="0.4"
+                android:src="@drawable/undo" />
+
+            <ImageView
+                android:id="@+id/sketch_redo"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:alpha="0.4"
+                android:src="@drawable/redo" />
+
+
+            <ImageView
+                android:id="@+id/sketch_photo"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/photo" />
+
+            <ImageView
+                android:id="@+id/sketch_save"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/save" />
+
+            <ImageView
+                android:id="@+id/sketch_erase"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/delete" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/line"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="线条"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@drawable/text_color"
+
+                android:layout_weight="1">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/arc"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textColor="@drawable/text_color"
+                android:text="弧线"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/rect"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@drawable/text_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="矩形"
+                android:layout_weight="1">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/oval"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="椭圆"
+                android:textColor="@drawable/text_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/heart"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="心形"
+                android:textColor="@drawable/text_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/t2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@drawable/text_color"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:layout_weight="1">-->
+
+<!--            </androidx.appcompat.widget.AppCompatTextView>-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/img"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="缩放"
+                android:textColor="@drawable/text_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/out"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="退出"
+                android:textColor="@drawable/text_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+       <!-- <com.example.db.ZoomImageView
+            android:id="@+id/zoom"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/brush">
+
+        </com.example.db.ZoomImageView>-->
+
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_painted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.db.SketchView
+                android:id="@+id/drawing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
